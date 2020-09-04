@@ -1,6 +1,7 @@
 #---------------------------------------------------
 # STATE BACKEND
 #---------------------------------------------------
+
 terraform {
   backend "s3" {
     bucket = "example-state-bucket"
@@ -12,6 +13,7 @@ terraform {
 #---------------------------------------------------
 # DATA SOURCES
 #---------------------------------------------------
+
 data "aws_ami" "selected" {
   most_recent = true
   owners      = ["amazon"]
@@ -29,6 +31,7 @@ data "aws_ami" "selected" {
 #---------------------------------------------------
 # VPC
 #---------------------------------------------------
+
 module "vpc" {
   source               = "terraform-aws-modules/vpc/aws"
   name                 = "${var.vpc_name}-vpc"
