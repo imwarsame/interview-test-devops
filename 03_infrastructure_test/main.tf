@@ -70,7 +70,7 @@ module "bastion" {
 }
 
 # ---------------------------------------------------
-# CREATE BASTION SECURITY GROUP
+# BASTION - SECURITY GROUP
 # ---------------------------------------------------
 
 module "bastion_ssh_sg" {

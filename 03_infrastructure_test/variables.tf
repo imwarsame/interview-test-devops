@@ -38,3 +38,8 @@ variable "allowed_ips" {
   description = "A map of allowed /32 ips authorized to ssh into bastion"
   default     = {} # by default don't allow any ips
 }
+
+variable "lc_name" {
+  description = "Name of the launch configuration the auto scaling group uses to provision our bastion server"
+  type        = string
+}
