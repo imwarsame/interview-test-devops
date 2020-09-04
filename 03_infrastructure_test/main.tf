@@ -80,7 +80,7 @@ module "bastion_ssh_sg" {
   source              = "terraform-aws-modules/security-group/aws"
   name                = var.bastion_sg_name
   description         = "Allows ssh to the bastion from specific /32 IPs only"
-  vpc_id              = data.aws_vpc.selected.id
+  vpc_id              = module.vpc.vpc_id
   ingress_cidr_blocks = values(var.allowed_ips)
   ingress_rules       = ["ssh-tcp"]
   egress_rules        = ["all-all"]
