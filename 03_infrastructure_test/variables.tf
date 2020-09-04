@@ -24,10 +24,6 @@ variable "public_subnets" {
   type        = list(string)
 }
 
-variable "private_subnets" {
-  description = "A list of private subnets inside the VPC"
-  type        = list(string)
-}
 
 variable "instance_type" {
   description = "The type of instance to start."
