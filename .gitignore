@@ -1,4 +1,6 @@
-  
+# Ignore virtualenvs
+venv
+
 # Local .terraform directories
 **/.terraform/*
 
