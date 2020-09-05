@@ -22,10 +22,6 @@ cURL localhost
 curl localhost:80
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- <meta charset="UTF-8"> -->
-    <!-- <title>Hello World - Nginx Docker</title> -->
-</head>
 <body>
     
     <h1>
