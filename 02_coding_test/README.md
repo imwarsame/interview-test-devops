@@ -1,1 +1,1 @@
-Python script to delete Elasticsearch indices which are older than a specific set days
+Python script to delete AWS Elasticsearch service indices which are older than a specific set days
