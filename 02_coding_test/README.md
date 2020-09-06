@@ -1,0 +1,1 @@
+Python script to delete Elasticsearch indices which are older than a specific set days
